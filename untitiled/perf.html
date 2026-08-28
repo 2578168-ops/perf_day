@@ -1,0 +1,1816 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>my perfect day ♡</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Sacramento&display=swap" rel="stylesheet">
+
+<style>
+
+/* =====================================================
+   GENERAL
+===================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
+  background: #f7f1e9;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.script {
+  font-family: "Sacramento", cursive;
+}
+
+.serif {
+  font-family: "Cormorant Garamond", serif;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+nav {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+
+  width: min(92%, 1050px);
+  padding: 13px 22px;
+
+  border-radius: 50px;
+
+  background: rgba(255,255,255,.42);
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255,255,255,.6);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  transition: .4s;
+}
+
+.logo {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 1.35rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+nav a {
+  color: inherit;
+  font-size: .62rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  opacity: .55;
+}
+
+
+/* =====================================================
+   SECTION 1 — MOUNTAIN SUNRISE
+===================================================== */
+
+.morning {
+  min-height: 100vh;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  padding: 130px 8%;
+
+  color: #fffaf5;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(20,31,45,.05),
+      rgba(20,31,45,.25)
+    ),
+    url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=2200&q=90")
+    center/cover;
+
+  overflow: hidden;
+}
+
+/* warm sunrise glow */
+
+.morning::before {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  border-radius: 50%;
+
+  background: rgba(255,185,117,.28);
+
+  filter: blur(70px);
+
+  top: 15%;
+  left: 25%;
+}
+
+.morning-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 600px;
+}
+
+.morning-small {
+  text-transform: uppercase;
+  letter-spacing: .35em;
+  font-size: .62rem;
+
+  margin-bottom: 25px;
+}
+
+.morning h1 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(5rem, 10vw, 9rem);
+
+  line-height: .75;
+
+  font-weight: 400;
+
+  letter-spacing: -.06em;
+}
+
+.morning h1 em {
+  font-style: italic;
+}
+
+.morning-script {
+  font-family: "Sacramento", cursive;
+
+  font-size: 3.4rem;
+
+  margin-top: 30px;
+
+  transform: rotate(-4deg);
+}
+
+.morning-text {
+  margin-top: 20px;
+
+  max-width: 420px;
+
+  font-size: .8rem;
+
+  line-height: 1.9;
+
+  color: rgba(255,255,255,.82);
+}
+
+
+/* sunrise sticker */
+
+.sun-sticker {
+  position: absolute;
+
+  right: 9%;
+  top: 22%;
+
+  width: 130px;
+  height: 130px;
+
+  border-radius: 50%;
+
+  background: rgba(255,231,193,.35);
+
+  border: 1px solid rgba(255,255,255,.5);
+
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  font-family: "Sacramento", cursive;
+
+  font-size: 1.6rem;
+
+  transform: rotate(8deg);
+}
+
+
+/* =====================================================
+   SECTION 2 — HEALTHY BREAKFAST
+===================================================== */
+
+.breakfast {
+  min-height: 100vh;
+
+  padding: 130px 7%;
+
+  background:
+    radial-gradient(circle at 15% 20%, #eee1c9, transparent 25%),
+    #f9f7f1;
+
+  color: #49443e;
+
+  position: relative;
+}
+
+.breakfast-heading {
+  text-align: center;
+
+  max-width: 700px;
+
+  margin: auto;
+}
+
+.breakfast-label {
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  font-size: .58rem;
+  color: #a29178;
+}
+
+.breakfast h2 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(4rem, 7vw, 7rem);
+
+  font-weight: 400;
+
+  line-height: .85;
+
+  margin-top: 15px;
+}
+
+.breakfast-sub {
+  margin-top: 20px;
+
+  color: #8b8176;
+
+  font-size: .78rem;
+
+  line-height: 1.8;
+}
+
+
+/* breakfast grid */
+
+.breakfast-grid {
+  max-width: 1100px;
+
+  margin: 80px auto 0;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1.3fr 1fr;
+
+  align-items: center;
+
+  gap: 25px;
+}
+
+
+/* food cards */
+
+.food-card {
+  background: white;
+
+  padding: 15px;
+
+  box-shadow: 0 20px 50px rgba(75,65,50,.08);
+
+  transition: .4s;
+}
+
+.food-card:hover {
+  transform: translateY(-10px);
+}
+
+.food-card img {
+  width: 100%;
+  height: 260px;
+
+  object-fit: cover;
+}
+
+.food-card p {
+  padding: 15px 5px 7px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 1.5rem;
+}
+
+
+/* center breakfast */
+
+.breakfast-center {
+  text-align: center;
+}
+
+.breakfast-center img {
+  width: 100%;
+
+  height: 430px;
+
+  object-fit: cover;
+
+  border-radius: 200px 200px 15px 15px;
+
+  box-shadow: 0 25px 60px rgba(75,65,50,.13);
+}
+
+.breakfast-center span {
+  display: block;
+
+  font-family: "Sacramento", cursive;
+
+  font-size: 2.2rem;
+
+  margin-top: 15px;
+}
+
+
+/* =====================================================
+   SECTION 3 — MASSIVE SHOPPING HAUL
+===================================================== */
+
+.shopping {
+  min-height: 100vh;
+
+  padding: 130px 5%;
+
+  color: #4d403b;
+
+  background:
+    radial-gradient(circle at 15% 15%, #f0c8c2, transparent 23%),
+    radial-gradient(circle at 90% 80%, #d8dfce, transparent 25%),
+    #eadfd7;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.shopping-title {
+  text-align: center;
+
+  position: relative;
+  z-index: 2;
+}
+
+.shopping-title small {
+  text-transform: uppercase;
+
+  letter-spacing: .35em;
+
+  font-size: .58rem;
+}
+
+.shopping-title h2 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(5rem, 10vw, 10rem);
+
+  font-weight: 400;
+
+  line-height: .7;
+
+  margin-top: 20px;
+}
+
+.shopping-title h2 em {
+  color: #b57670;
+}
+
+.shopping-title p {
+  font-family: "Sacramento", cursive;
+
+  font-size: 2.3rem;
+
+  margin-top: 20px;
+}
+
+
+/* haul collage */
+
+.haul {
+  max-width: 1250px;
+
+  margin: 80px auto 0;
+
+  display: grid;
+
+  grid-template-columns: repeat(12, 1fr);
+
+  gap: 25px;
+
+  align-items: start;
+}
+
+
+/* individual item */
+
+.haul-item {
+  position: relative;
+
+  background: #fffaf6;
+
+  padding: 12px;
+
+  box-shadow: 0 20px 45px rgba(80,60,50,.13);
+
+  transition: .45s;
+}
+
+.haul-item:hover {
+  transform: translateY(-12px) rotate(1deg);
+  z-index: 10;
+}
+
+.haul-item img {
+  width: 100%;
+  height: 330px;
+
+  object-fit: cover;
+}
+
+.haul-info {
+  padding: 14px 5px 8px;
+}
+
+.haul-info small {
+  font-size: .55rem;
+
+  letter-spacing: .18em;
+
+  text-transform: uppercase;
+
+  color: #b17d75;
+}
+
+.haul-info h3 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 1.6rem;
+
+  font-weight: 500;
+
+  margin-top: 3px;
+}
+
+.haul-info p {
+  font-size: .65rem;
+
+  color: #8f817a;
+
+  margin-top: 3px;
+}
+
+
+/* stagger */
+
+.haul-item:nth-child(1) {
+  grid-column: span 4;
+  transform: rotate(-2deg);
+}
+
+.haul-item:nth-child(2) {
+  grid-column: span 4;
+  margin-top: 50px;
+  transform: rotate(2deg);
+}
+
+.haul-item:nth-child(3) {
+  grid-column: span 4;
+  transform: rotate(-1deg);
+}
+
+.haul-item:nth-child(4) {
+  grid-column: span 3;
+  margin-top: -20px;
+  transform: rotate(3deg);
+}
+
+.haul-item:nth-child(5) {
+  grid-column: span 3;
+  margin-top: 40px;
+  transform: rotate(-3deg);
+}
+
+.haul-item:nth-child(6) {
+  grid-column: span 3;
+  transform: rotate(2deg);
+}
+
+.haul-item:nth-child(7) {
+  grid-column: span 3;
+  margin-top: 55px;
+  transform: rotate(-2deg);
+}
+
+
+/* stickers */
+
+.sticker {
+  position: absolute;
+
+  padding: 10px 15px;
+
+  background: #f5df9e;
+
+  font-family: "Sacramento", cursive;
+
+  font-size: 1.5rem;
+
+  box-shadow: 4px 6px 15px rgba(50,40,30,.1);
+
+  transform: rotate(-8deg);
+
+  z-index: 5;
+}
+
+.sticker.one {
+  left: 4%;
+  top: 35%;
+}
+
+.sticker.two {
+  right: 5%;
+  top: 52%;
+
+  background: #d4dfcb;
+
+  transform: rotate(7deg);
+}
+
+.sticker.three {
+  left: 45%;
+  bottom: 5%;
+
+  background: #e9bdb8;
+}
+
+
+/* =====================================================
+   SECTION 4 — NIGHT SWIM
+===================================================== */
+
+.swim {
+  min-height: 100vh;
+
+  padding: 130px 7%;
+
+  color: white;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      rgba(3,15,32,.45),
+      rgba(2,8,22,.75)
+    ),
+    url("https://images.unsplash.com/photo-1519750783826-e2420f4d687f?auto=format&fit=crop&w=2200&q=90")
+    center/cover;
+}
+
+
+/* blue glow */
+
+.swim::before {
+  content: "";
+
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  background: #235a91;
+
+  opacity: .2;
+
+  filter: blur(100px);
+
+  border-radius: 50%;
+
+  right: -150px;
+  bottom: -200px;
+}
+
+.swim-content {
+  position: relative;
+
+  z-index: 2;
+
+  text-align: center;
+}
+
+.swim-label {
+  font-size: .58rem;
+
+  letter-spacing: .4em;
+
+  text-transform: uppercase;
+
+  color: #a9cbe9;
+}
+
+.swim h2 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(5rem, 10vw, 10rem);
+
+  font-weight: 400;
+
+  line-height: .75;
+
+  margin-top: 20px;
+}
+
+.swim h2 em {
+  color: #b8ddff;
+}
+
+.swim-script {
+  font-family: "Sacramento", cursive;
+
+  font-size: 3rem;
+
+  margin-top: 30px;
+
+  color: #b5d8f3;
+}
+
+
+/* pool image */
+
+.pool-card {
+  max-width: 850px;
+
+  margin: 70px auto 0;
+
+  position: relative;
+}
+
+.pool-card img {
+  width: 100%;
+
+  height: 450px;
+
+  object-fit: cover;
+
+  border-radius: 3px;
+
+  box-shadow: 0 30px 90px rgba(0,0,0,.45);
+
+  filter: brightness(.82) saturate(.8);
+}
+
+.pool-caption {
+  position: absolute;
+
+  left: 30px;
+  bottom: 25px;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 1.6rem;
+
+  color: rgba(255,255,255,.9);
+}
+
+
+/* moon */
+
+.moon {
+  position: absolute;
+
+  width: 90px;
+  height: 90px;
+
+  border-radius: 50%;
+
+  background: #f8f1d6;
+
+  box-shadow:
+    0 0 30px rgba(255,245,190,.4),
+    0 0 90px rgba(255,245,190,.2);
+
+  right: 12%;
+  top: 17%;
+}
+
+
+/* stars */
+
+.star {
+  position: absolute;
+
+  color: #d9edff;
+
+  animation: twinkle 2.5s infinite alternate;
+}
+
+.star1 { top: 18%; left: 12%; }
+.star2 { top: 28%; left: 25%; animation-delay: .5s; }
+.star3 { top: 13%; right: 30%; animation-delay: 1s; }
+.star4 { top: 38%; right: 8%; animation-delay: 1.5s; }
+.star5 { top: 10%; left: 50%; animation-delay: .8s; }
+
+@keyframes twinkle {
+  from {
+    opacity: .25;
+    transform: scale(.7);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+}
+
+
+/* =====================================================
+   SECTION 5 — SLEEP / MOON / OATMEAL
+===================================================== */
+
+.sleep {
+  min-height: 100vh;
+
+  padding: 130px 7% 80px;
+
+  color: #e9dfd5;
+
+  background:
+    radial-gradient(circle at 80% 10%, #41352f, transparent 22%),
+    radial-gradient(circle at 20% 70%, #302725, transparent 25%),
+    #151213;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.sleep-heading {
+  text-align: center;
+}
+
+.sleep-heading small {
+  text-transform: uppercase;
+
+  letter-spacing: .35em;
+
+  color: #a99589;
+
+  font-size: .58rem;
+}
+
+.sleep-heading h2 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(4.5rem, 9vw, 9rem);
+
+  font-weight: 400;
+
+  line-height: .72;
+
+  margin-top: 20px;
+}
+
+.sleep-heading h2 em {
+  color: #cbb49d;
+}
+
+.sleep-heading p {
+  font-family: "Sacramento", cursive;
+
+  font-size: 2.5rem;
+
+  color: #bca898;
+
+  margin-top: 25px;
+}
+
+
+/* bedroom layout */
+
+.sleep-grid {
+  max-width: 1100px;
+
+  margin: 80px auto 0;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1.2fr 1fr;
+
+  gap: 25px;
+
+  align-items: center;
+}
+
+
+/* cozy cards */
+
+.night-card {
+  background: rgba(255,255,255,.045);
+
+  border: 1px solid rgba(255,255,255,.09);
+
+  padding: 13px;
+
+  backdrop-filter: blur(8px);
+
+  transition: .4s;
+}
+
+.night-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255,255,255,.07);
+}
+
+.night-card img {
+  height: 280px;
+
+  width: 100%;
+
+  object-fit: cover;
+
+  filter: brightness(.7) saturate(.7);
+}
+
+.night-card h3 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 1.8rem;
+
+  font-weight: 400;
+
+  margin: 15px 5px 3px;
+}
+
+.night-card p {
+  color: #998a80;
+
+  font-size: .65rem;
+
+  line-height: 1.7;
+
+  margin: 0 5px 12px;
+}
+
+
+/* center moon */
+
+.sleep-center {
+  text-align: center;
+}
+
+.big-moon {
+  width: 260px;
+  height: 260px;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(circle at 35% 35%, #f7eed8, #c9bba1);
+
+  box-shadow:
+    0 0 40px rgba(236,218,174,.15),
+    0 0 130px rgba(220,198,148,.08);
+}
+
+.sleep-center span {
+  display: block;
+
+  font-family: "Sacramento", cursive;
+
+  font-size: 2.4rem;
+
+  margin-top: 25px;
+
+  color: #cbb49d;
+}
+
+
+/* bottom quote */
+
+.sleep-quote {
+  max-width: 700px;
+
+  text-align: center;
+
+  margin: 100px auto 0;
+
+  color: #82736c;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-style: italic;
+
+  font-size: 1.5rem;
+}
+
+
+/* stars */
+
+.sleep-star {
+  position: absolute;
+
+  color: #d7c5ae;
+
+  opacity: .5;
+}
+
+.ss1 { top: 10%; left: 8%; }
+.ss2 { top: 22%; right: 10%; }
+.ss3 { top: 45%; left: 5%; }
+.ss4 { bottom: 18%; right: 7%; }
+.ss5 { bottom: 8%; left: 20%; }
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+  background: #0e0d0e;
+
+  color: #81756f;
+
+  text-align: center;
+
+  padding: 70px 20px;
+}
+
+footer .script {
+  font-size: 3rem;
+
+  color: #c3b1a4;
+}
+
+footer p {
+  font-size: .58rem;
+
+  letter-spacing: .18em;
+
+  margin-top: 10px;
+}
+
+
+/* =====================================================
+   SCROLL REVEAL
+===================================================== */
+
+.reveal {
+  opacity: 0;
+
+  transform: translateY(35px);
+
+  transition: 1s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width: 850px) {
+
+  nav {
+    padding: 12px 17px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+
+  /* morning */
+
+  .morning {
+    padding: 120px 7% 70px;
+  }
+
+  .morning h1 {
+    font-size: 6rem;
+  }
+
+  .sun-sticker {
+    width: 90px;
+    height: 90px;
+
+    right: 5%;
+    top: 13%;
+
+    font-size: 1.2rem;
+  }
+
+
+  /* breakfast */
+
+  .breakfast-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .breakfast-center {
+    order: -1;
+  }
+
+
+  /* shopping */
+
+  .haul {
+    display: block;
+  }
+
+  .haul-item,
+  .haul-item:nth-child(n) {
+    margin: 30px auto;
+
+    max-width: 450px;
+
+    transform: none;
+  }
+
+  .sticker {
+    display: none;
+  }
+
+
+  /* swim */
+
+  .moon {
+    width: 60px;
+    height: 60px;
+    right: 7%;
+  }
+
+  .pool-card img {
+    height: 330px;
+  }
+
+
+  /* sleep */
+
+  .sleep-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sleep-center {
+    order: -1;
+  }
+
+  .big-moon {
+    width: 190px;
+    height: 190px;
+  }
+
+}
+
+
+@media(max-width: 500px) {
+
+  section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .morning h1 {
+    font-size: 4.8rem;
+  }
+
+  .morning-script {
+    font-size: 2.6rem;
+  }
+
+  .shopping-title h2 {
+    font-size: 5rem;
+  }
+
+  .swim h2 {
+    font-size: 5rem;
+  }
+
+  .sleep-heading h2 {
+    font-size: 5rem;
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<nav>
+
+  <div class="logo">
+    my perfect day ♡
+  </div>
+
+  <ul>
+
+    <li>
+      <a href="#morning">morning</a>
+    </li>
+
+    <li>
+      <a href="#breakfast">breakfast</a>
+    </li>
+
+    <li>
+      <a href="#shopping">shopping</a>
+    </li>
+
+    <li>
+      <a href="#swim">night swim</a>
+    </li>
+
+    <li>
+      <a href="#sleep">sleep</a>
+    </li>
+
+  </ul>
+
+</nav>
+
+
+<!-- =====================================================
+     1. MOUNTAIN + SUNRISE + BEACH
+===================================================== -->
+
+<section class="morning" id="morning">
+
+  <div class="morning-content reveal">
+
+    <div class="morning-small">
+      06:12 AM · somewhere beautiful
+    </div>
+
+    <h1>
+      waking<br>
+      up in the<br>
+      <em>mountains.</em>
+    </h1>
+
+    <div class="morning-script">
+      good morning, beautiful ♡
+    </div>
+
+    <p class="morning-text">
+
+      The windows are open, the mountains are glowing
+      and the sun is slowly rising over the water.
+      Bare feet, messy hair and absolutely nowhere to be.
+
+    </p>
+
+  </div>
+
+
+  <div class="sun-sticker">
+    sunrise<br>
+    state of mind
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     2. HEALTHY BREAKFAST
+===================================================== -->
+
+<section class="breakfast" id="breakfast">
+
+  <div class="breakfast-heading reveal">
+
+    <div class="breakfast-label">
+      08:00 AM · slow breakfast
+    </div>
+
+    <h2>
+      nourish<br>
+      your morning.
+    </h2>
+
+    <p class="breakfast-sub">
+      A quiet table, fresh fruit, warm oatmeal,
+      a little coffee and absolutely no rushing.
+    </p>
+
+  </div>
+
+
+  <div class="breakfast-grid">
+
+
+    <div class="food-card reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=800&q=85"
+        alt="healthy breakfast"
+      >
+
+      <p>
+        fresh & simple
+      </p>
+
+    </div>
+
+
+    <div class="breakfast-center reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?auto=format&fit=crop&w=1000&q=85"
+        alt="fruit breakfast"
+      >
+
+      <span>
+        eat slowly ♡
+      </span>
+
+    </div>
+
+
+    <div class="food-card reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=800&q=85"
+        alt="oatmeal"
+      >
+
+      <p>
+        something warm
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     3. FULL SHOPPING HAUL
+===================================================== -->
+
+<section class="shopping" id="shopping">
+
+  <div class="shopping-title reveal">
+
+    <small>
+      03:30 PM · bad financial decisions
+    </small>
+
+    <h2>
+      the <em>haul.</em>
+    </h2>
+
+    <p>
+      I only went in for one thing...
+    </p>
+
+  </div>
+
+
+  <div class="haul">
+
+
+    <article class="haul-item reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=85"
+        alt="handbag"
+      >
+
+      <div class="haul-info">
+
+        <small>01 · accessory</small>
+
+        <h3>
+          the everyday bag
+        </h3>
+
+        <p>
+          $68 · absolutely necessary
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <article class="haul-item reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85"
+        alt="shoes"
+      >
+
+      <div class="haul-info">
+
+        <small>02 · shoes</small>
+
+        <h3>
+          new sneakers
+        </h3>
+
+        <p>
+          $92 · she deserved them
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <article class="haul-item reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=900&q=85"
+        alt="perfume"
+      >
+
+      <div class="haul-info">
+
+        <small>03 · beauty</small>
+
+        <h3>
+          signature scent
+        </h3>
+
+        <p>
+          $74 · smells like heaven
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <article class="haul-item reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=900&q=85"
+        alt="jewelry"
+      >
+
+      <div class="haul-info">
+
+        <small>04 · jewelry</small>
+
+        <h3>
+          tiny gold hoops
+        </h3>
+
+        <p>
+          $36 · everyday sparkle
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <article class="haul-item reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=900&q=85"
+        alt="dress"
+      >
+
+      <div class="haul-info">
+
+        <small>05 · fashion</small>
+
+        <h3>
+          dream dress
+        </h3>
+
+        <p>
+          $89 · no explanation
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <article class="haul-item reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=85"
+        alt="sunglasses"
+      >
+
+      <div class="haul-info">
+
+        <small>06 · accessory</small>
+
+        <h3>
+          vintage shades
+        </h3>
+
+        <p>
+          $45 · main character energy
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <article class="haul-item reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=900&q=85"
+        alt="clothing"
+      >
+
+      <div class="haul-info">
+
+        <small>07 · little extra</small>
+
+        <h3>
+          one more thing...
+        </h3>
+
+        <p>
+          $39 · oops ♡
+        </p>
+
+      </div>
+
+    </article>
+
+
+  </div>
+
+
+  <div class="sticker one">
+    shopping therapy ♡
+  </div>
+
+  <div class="sticker two">
+    I was influenced
+  </div>
+
+  <div class="sticker three">
+    no regrets.
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     4. NIGHT SWIMMING
+===================================================== -->
+
+<section class="swim" id="swim">
+
+  <div class="moon"></div>
+
+  <div class="star star1">✦</div>
+  <div class="star star2">✧</div>
+  <div class="star star3">✦</div>
+  <div class="star star4">✧</div>
+  <div class="star star5">✦</div>
+
+
+  <div class="swim-content reveal">
+
+    <div class="swim-label">
+      10:17 PM · after dark
+    </div>
+
+    <h2>
+      midnight<br>
+      <em>swim.</em>
+    </h2>
+
+    <div class="swim-script">
+      meet me by the water ♡
+    </div>
+
+  </div>
+
+
+  <div class="pool-card reveal">
+
+    <img
+      src="https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=1500&q=90"
+      alt="night swimming pool"
+    >
+
+    <div class="pool-caption">
+      warm water · cool night · no plans tomorrow
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     5. SLEEP + OATMEAL + MOON
+===================================================== -->
+
+<section class="sleep" id="sleep">
+
+  <div class="sleep-star ss1">✦</div>
+  <div class="sleep-star ss2">✧</div>
+  <div class="sleep-star ss3">✦</div>
+  <div class="sleep-star ss4">✧</div>
+  <div class="sleep-star ss5">✦</div>
+
+
+  <div class="sleep-heading reveal">
+
+    <small>
+      11:48 PM · goodnight
+    </small>
+
+    <h2>
+      soft<br>
+      <em>nights.</em>
+    </h2>
+
+    <p>
+      and slow mornings to come
+    </p>
+
+  </div>
+
+
+  <div class="sleep-grid">
+
+
+    <div class="night-card reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=900&q=85"
+        alt="cozy bedroom"
+      >
+
+      <h3>
+        cozy little room
+      </h3>
+
+      <p>
+        Fresh sheets, dim lights,
+        candles burning and the world
+        finally quiet.
+      </p>
+
+    </div>
+
+
+    <div class="sleep-center reveal">
+
+      <div class="big-moon"></div>
+
+      <span>
+        sleep well, darling ♡
+      </span>
+
+    </div>
+
+
+    <div class="night-card reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1571748982800-fa51082c2224?auto=format&fit=crop&w=900&q=85"
+        alt="oatmeal bowl"
+      >
+
+      <h3>
+        midnight oatmeal
+      </h3>
+
+      <p>
+        Warm oatmeal, cinnamon,
+        honey and one last tiny
+        comfort before bed.
+      </p>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="sleep-quote reveal">
+
+    “And just like that, another little day
+    became a memory worth keeping.”
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+  <div class="script">
+    goodnight, beautiful ♡
+  </div>
+
+  <p>
+    END OF THE PERFECT DAY · SEE YOU TOMORROW
+  </p>
+
+</footer>
+
+
+<script>
+
+/* =====================================================
+   SCROLL REVEAL
+===================================================== */
+
+const observer = new IntersectionObserver(
+
+  (entries) => {
+
+    entries.forEach(entry => {
+
+      if (entry.isIntersecting) {
+
+        entry.target.classList.add("show");
+
+      }
+
+    });
+
+  },
+
+  {
+    threshold: .12
+  }
+
+);
+
+
+document
+  .querySelectorAll(".reveal")
+  .forEach(element => observer.observe(element));
+
+
+/* =====================================================
+   NAV BLUR ON SCROLL
+===================================================== */
+
+const nav = document.querySelector("nav");
+
+window.addEventListener("scroll", () => {
+
+  if (window.scrollY > 80) {
+
+    nav.style.background = "rgba(255,255,255,.68)";
+    nav.style.boxShadow = "0 10px 35px rgba(0,0,0,.08)";
+
+  } else {
+
+    nav.style.background = "rgba(255,255,255,.42)";
+    nav.style.boxShadow = "none";
+
+  }
+
+});
+
+
+/* =====================================================
+   RANDOM SPARKLES
+===================================================== */
+
+document.addEventListener("mousemove", e => {
+
+  if (Math.random() > .94) {
+
+    const sparkle = document.createElement("span");
+
+    sparkle.innerHTML = "✦";
+
+    sparkle.style.position = "fixed";
+
+    sparkle.style.left = e.clientX + "px";
+    sparkle.style.top = e.clientY + "px";
+
+    sparkle.style.color = "#d5aaa3";
+
+    sparkle.style.pointerEvents = "none";
+
+    sparkle.style.zIndex = "2000";
+
+    sparkle.style.fontSize = "10px";
+
+    sparkle.style.transition = ".8s";
+
+    document.body.appendChild(sparkle);
+
+    requestAnimationFrame(() => {
+
+      sparkle.style.transform =
+        "translateY(-25px) scale(1.8)";
+
+      sparkle.style.opacity = "0";
+
+    });
+
+    setTimeout(() => {
+
+      sparkle.remove();
+
+    }, 800);
+
+  }
+
+});
+
+
+/* =====================================================
+   IMAGE PARALLAX
+===================================================== */
+
+window.addEventListener("scroll", () => {
+
+  const morning = document.querySelector(".morning");
+
+  const scroll = window.scrollY;
+
+  if (scroll < window.innerHeight) {
+
+    morning.style.backgroundPosition =
+      `center ${scroll * .25}px`;
+
+  }
+
+});
+
+</script>
+
+</body>
+</html>
+```
